@@ -6,13 +6,10 @@ using namespace std;
 string formatAngka(int angka) {
     string hasil = std::to_string(angka);
     int len = hasil.length();
-
     for (int i = len - 3; i > 0; i -= 3) {
         hasil.insert(i, ".");
     }
-
     hasil = "Rp." + hasil;
-
     return hasil;
 }
 
