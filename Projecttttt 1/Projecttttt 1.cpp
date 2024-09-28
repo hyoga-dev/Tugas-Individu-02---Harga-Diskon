@@ -9,7 +9,7 @@ string formatAngka(int angka) {
     for (int i = len - 3; i > 0; i -= 3) {
         hasil.insert(i, ".");
     }
-    hasil = "Rp." + hasil;
+    hasil = "Rp. " + hasil;
     return hasil;
 }
 
